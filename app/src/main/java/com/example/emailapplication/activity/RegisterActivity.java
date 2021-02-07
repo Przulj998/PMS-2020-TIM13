@@ -16,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.example.emailapplication.R;
-import com.example.emailapplication.entity.Account;
 
 import java.lang.ref.WeakReference;
 

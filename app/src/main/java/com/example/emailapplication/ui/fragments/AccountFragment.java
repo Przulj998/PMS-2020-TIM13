@@ -15,7 +15,6 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.emailapplication.R;
-import com.example.emailapplication.entity.Account;
 import com.example.emailapplication.viewmodels.AccountViewModel;
 
 public class AccountFragment extends Fragment {

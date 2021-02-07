@@ -17,7 +17,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.ui.AppBarConfiguration;
 
 import com.example.emailapplication.R;
-import com.example.emailapplication.tools.NavigationRouter;
 import com.example.emailapplication.viewmodels.EmailListViewModel;
 import com.google.android.material.navigation.NavigationView;
 

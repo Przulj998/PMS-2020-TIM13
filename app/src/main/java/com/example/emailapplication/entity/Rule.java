@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "rule")
 public class Rule {
     @NonNull
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     public  Long id;
     public   int operation;
     public   int condition;

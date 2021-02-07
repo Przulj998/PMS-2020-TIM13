@@ -3,21 +3,16 @@ package com.example.emailapplication.activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.emailapplication.R;
-import com.example.emailapplication.tools.NavigationRouter;
-import com.google.android.material.navigation.NavigationView;
 
 public class ContactActivity  extends AppCompatActivity implements View.OnClickListener {
     private Intent intentContactContacts;

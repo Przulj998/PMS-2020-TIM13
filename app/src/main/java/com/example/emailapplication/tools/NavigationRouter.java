@@ -9,6 +9,8 @@ import androidx.annotation.NonNull;
 import com.example.emailapplication.R;
 import com.example.emailapplication.activity.ContactsActivity;
 import com.example.emailapplication.activity.EmailsActivity;
+import com.example.emailapplication.activity.LoginActivity;
+import com.example.emailapplication.activity.ProfileActivity;
 
 public interface NavigationRouter {
     public static boolean routeFromMenuItem(Activity context, @NonNull MenuItem item){

@@ -1,8 +1,5 @@
 package com.example.emailapplication.entity;
 
-import androidx.annotation.NonNull;
-import androidx.room.Entity;
-
 
 public class Condition {
     public static final int to=0;

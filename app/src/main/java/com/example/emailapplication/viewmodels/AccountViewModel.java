@@ -8,8 +8,6 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.emailapplication.entity.Account;
-
 import java.lang.ref.WeakReference;
 
 public class AccountViewModel  extends AndroidViewModel {

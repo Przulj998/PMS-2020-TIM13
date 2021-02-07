@@ -16,7 +16,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.emailapplication.R;
-import com.example.emailapplication.entity.Account;
 
 import java.lang.ref.WeakReference;
 

@@ -10,21 +10,21 @@ import androidx.room.PrimaryKey;
 public class Account {
         public int DEFAULT=0;
         @NonNull
-        @PrimaryKey
+        @PrimaryKey(autoGenerate = true)
         public Long id;
         public String username;
         public String password ;
         public int smtp; //smtp protocol port
         public int pop3Imap; //pop3Imap protocol port
 
-        public Account( String username, String password, int smtp, int pop3Imap) {
+        public Account(String username, String password, int smtp, int pop3Imap) {
                 this.username = username;
                 this.password = password;
                 this.smtp = smtp;
                 this.pop3Imap = pop3Imap;
         }
         @Ignore
-        public Account( String username, String password) {
+        public Account(String username, String password) {
                 this.username = username;
                 this.password = password;
                 this.smtp = DEFAULT;

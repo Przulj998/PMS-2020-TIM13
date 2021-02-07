@@ -9,7 +9,7 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "attachment")
 public class Attachment {
 
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @NonNull
     public Long id;
     public Base64 data;
