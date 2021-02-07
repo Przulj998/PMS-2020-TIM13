@@ -16,7 +16,6 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.emailapplication.R;
 import com.example.emailapplication.helpEntities.Setting;
-import com.example.emailapplication.viewmodels.SettingsViewModel;
 
 public class SettingsFragment extends Fragment {
     SettingsViewModel settingsViewModel;

@@ -2,6 +2,8 @@ package com.example.emailapplication;
 
 import android.app.Application;
 
+import com.example.emailapplication.database.AppDatabase;
+
 public class EmailApplication extends Application {
     AppDatabase appDatabase=null;
 

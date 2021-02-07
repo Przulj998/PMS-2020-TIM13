@@ -16,6 +16,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.emailapplication.R;
+import com.example.emailapplication.database.AppDatabase;
 
 import java.lang.ref.WeakReference;
 
@@ -60,7 +61,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_login);
-        appDatabase= AppDatabase.getInstance(LoginActivity.this);
+        appDatabase=AppDatabase.getInstance(LoginActivity.this);
         username = findViewById(R.id.UsernameLogin);
         password = findViewById(R.id.PasswordLogin);
         login = findViewById(R.id.LoginBtnLogin);

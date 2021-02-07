@@ -8,9 +8,12 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
+import com.example.emailapplication.database.AppDatabase;
+import com.example.emailapplication.entity.Account;
+
 import java.lang.ref.WeakReference;
 
-public class AccountViewModel  extends AndroidViewModel {
+public class AccountViewModel extends AndroidViewModel {
     AppDatabase appDatabase;
     MutableLiveData<Account> account;
 
@@ -29,7 +32,7 @@ public class AccountViewModel  extends AndroidViewModel {
         }
             return  null;
     }
-    private void setResult(Account account1,int flag) {
+    private void setResult(Account account1, int flag) {
         if(account1!=null)
         {
             account.setValue(account1);
@@ -41,7 +44,7 @@ public class AccountViewModel  extends AndroidViewModel {
         Long accId;
         private Account recievedAccount;
 
-        getAccountTask(AccountViewModel context,Long accountId){
+        getAccountTask(AccountViewModel context, Long accountId){
             activityWeakReference=new WeakReference<>(context);
             this.accId=accountId;
         }

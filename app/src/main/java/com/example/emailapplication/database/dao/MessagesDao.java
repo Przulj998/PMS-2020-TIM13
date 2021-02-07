@@ -1,13 +1,10 @@
 package com.example.emailapplication.database.dao;
 
 import androidx.room.Dao;
-import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Transaction;
 
-import com.example.emailapplication.entity.Account;
-import com.example.emailapplication.entity.AccountMessages;
 import com.example.emailapplication.entity.FolderMessages;
 import com.example.emailapplication.entity.Message;
 

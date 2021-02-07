@@ -14,7 +14,6 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.emailapplication.R;
-import com.example.emailapplication.tools.NavigationRouter;
 import com.google.android.material.navigation.NavigationView;
 
 public class ProfileActivity extends AppCompatActivity  {

@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.example.emailapplication.R;
+import com.example.emailapplication.database.AppDatabase;
 
 import java.lang.ref.WeakReference;
 
@@ -53,7 +54,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        appDatabase= AppDatabase.getInstance(RegisterActivity.this);
+        appDatabase=AppDatabase.getInstance(RegisterActivity.this);
 
         username = findViewById(R.id.registerEmail);
         password = findViewById(R.id.registerPassword);
