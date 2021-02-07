@@ -23,8 +23,6 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.room.TypeConverters;
 
-import com.example.emailapplication.database.dao.ContactDao;
-import com.example.emailapplication.database.dao.FolderDao;
 import com.example.emailapplication.database.dao.MessagesDao;
 import com.example.emailapplication.entity.Contact;
 import com.example.emailapplication.entity.Folder;

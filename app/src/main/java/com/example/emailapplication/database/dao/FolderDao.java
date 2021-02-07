@@ -1,7 +1,11 @@
 package com.example.emailapplication.database.dao;
 
+import android.widget.ListView;
+
 import androidx.room.Dao;
 import androidx.room.Query;
+
+import com.example.emailapplication.entity.Folder;
 
 import java.util.List;
 
