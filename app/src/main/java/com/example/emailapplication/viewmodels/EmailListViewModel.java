@@ -1,15 +1,19 @@
 package com.example.emailapplication.viewmodels;
 
 import android.app.Application;
+import android.content.Context;
 import android.os.AsyncTask;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
 
 import com.example.emailapplication.database.AppDatabase;
+import com.example.emailapplication.entity.Account;
 import com.example.emailapplication.entity.AccountMessages;
+import com.example.emailapplication.entity.Message;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
@@ -48,7 +52,7 @@ public LiveData<List<Message>> getMessages(Long accId) {
         Long accId;
         private List<Message> recievedMessages;
 
-        getMessagesListTask(EmailListViewModel context, Long accountId){
+        getMessagesListTask(EmailListViewModel context,Long accountId){
             activityWeakReference=new WeakReference<>(context);
             this.accId=accountId;
         }

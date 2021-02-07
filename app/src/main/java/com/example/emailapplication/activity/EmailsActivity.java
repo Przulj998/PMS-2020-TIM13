@@ -23,7 +23,6 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.emailapplication.R;
 import com.example.emailapplication.database.AppDatabase;
 import com.example.emailapplication.tools.NavigationRouter;
-import com.example.emailapplication.viewmodels.EmailListViewModel;
 import com.google.android.material.navigation.NavigationView;
 
 
