@@ -5,7 +5,6 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Transaction;
 
-import com.example.emailapplication.entity.FolderMessages;
 import com.example.emailapplication.entity.Message;
 
 import java.util.List;

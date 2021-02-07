@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "folder")
 public class Folder {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @NonNull
     public Long id;
     public String name;

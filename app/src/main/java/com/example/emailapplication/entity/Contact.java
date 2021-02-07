@@ -6,8 +6,8 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "contact")
 public class Contact {
-    @PrimaryKey
     @NonNull
+    @PrimaryKey(autoGenerate = true)
     public Long id;
     public String first;
     public String last ;
