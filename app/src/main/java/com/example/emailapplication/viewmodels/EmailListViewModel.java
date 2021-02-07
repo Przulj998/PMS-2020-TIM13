@@ -1,17 +1,14 @@
 package com.example.emailapplication.viewmodels;
 
 import android.app.Application;
-import android.content.Context;
 import android.os.AsyncTask;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
 
 import com.example.emailapplication.database.AppDatabase;
-import com.example.emailapplication.entity.Account;
 import com.example.emailapplication.entity.AccountMessages;
 import com.example.emailapplication.entity.Message;
 

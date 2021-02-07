@@ -14,7 +14,6 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.emailapplication.R;
-import com.example.emailapplication.entity.Account;
 
 //import androidx.fragment.app.Fragment;
 

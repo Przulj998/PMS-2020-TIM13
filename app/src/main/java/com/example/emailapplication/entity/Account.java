@@ -17,14 +17,14 @@ public class Account {
         public int smtp; //smtp protocol port
         public int pop3Imap; //pop3Imap protocol port
 
-        public Account(String username, String password, int smtp, int pop3Imap) {
+        public Account( String username, String password, int smtp, int pop3Imap) {
                 this.username = username;
                 this.password = password;
                 this.smtp = smtp;
                 this.pop3Imap = pop3Imap;
         }
         @Ignore
-        public Account(String username, String password) {
+        public Account( String username, String password) {
                 this.username = username;
                 this.password = password;
                 this.smtp = DEFAULT;
@@ -74,11 +74,4 @@ public class Account {
         {
                 return  this.username!=null && this.password!=null;
         }
-
-    @Entity(primaryKeys = {"tagId","messageId"})
-    public static class TagsMessagesCrossRef {
-        public long tagId;
-        public long messageId;
-
-    }
 }
