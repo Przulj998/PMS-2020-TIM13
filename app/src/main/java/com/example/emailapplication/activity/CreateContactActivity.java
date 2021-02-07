@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -16,9 +17,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.example.emailapplication.R;
+import com.example.emailapplication.database.AppDatabase;
 import com.example.emailapplication.entity.Contact;
 
 import java.lang.ref.WeakReference;
+import java.util.List;
 
 public class CreateContactActivity extends AppCompatActivity  {
     EditText firstName;
@@ -54,7 +57,7 @@ public class CreateContactActivity extends AppCompatActivity  {
             finish();
             return true;
         }else if(id == R.id.create_contact_save){
-            Contact contact=new Contact(firstName.getText().toString(),lastName.getText().toString(), email.getText().toString(),display.getText().toString(),true);
+            Contact contact=new Contact(firstName.getText().toString(),lastName.getText().toString(), display.getText().toString(),email.getText().toString(),true);
             Log.d("contact",contact.email+" "+contact.first+" "+contact.last+" "+contact.fomrat);
             new CreateContactActivity.createContact(this, contact).execute();
         }
@@ -68,6 +71,7 @@ public class CreateContactActivity extends AppCompatActivity  {
 
         Toolbar toolbar = findViewById(R.id.toolbar_create_contact);
         setSupportActionBar(toolbar);
+        appDatabase=AppDatabase.getInstance(CreateContactActivity.this);
 
         SharedPreferences sharedPreff = getSharedPreferences("currentUser", MODE_PRIVATE);
         username = sharedPreff.getString("username", "defaultStringIfNothingFound");
@@ -102,14 +106,15 @@ public class CreateContactActivity extends AppCompatActivity  {
 
         @Override
         protected Boolean doInBackground(Void... voids) {
-            activityWeakReference.get().appDatabase.getContactDao().CreateContact(contactToCreate);
+         List<Contact> contacts=   activityWeakReference.get().appDatabase.getContactDao().allContacts();
+            activityWeakReference.get().appDatabase.getContactDao().CreateContact(this.contactToCreate);
             return true;
         }
 
         @Override
         protected void onPostExecute(Boolean aBoolean) {
             if (aBoolean.booleanValue())
-                activityWeakReference.get().setResult(contactToCreate,1);
+                activityWeakReference.get().setResult(this.contactToCreate,1);
         }
     }
 

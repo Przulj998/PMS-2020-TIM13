@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.example.emailapplication.R;
+import com.example.emailapplication.database.AppDatabase;
 import com.example.emailapplication.entity.Contact;
 import com.example.emailapplication.entity.Message;
 
@@ -147,7 +148,7 @@ Long receiverId;
         @Override
         protected Boolean doInBackground(Void... voids) {
             //activityWeakReference.get().appDatabase.getContactDao().deleteAllContacts();
-            //Contact contact=new Contact("marko","markovic","marex","marex@t.com",false);
+            Contact contact=new Contact("marko","markovic","marex","marex@t.com",false);
             //Long value=activityWeakReference.get().appDatabase.getContactDao().CreateContact(contact);
             //Log.d("CreatedContent", "doInBackground: "+value.toString());
             contactToSendTo=activityWeakReference.get().appDatabase.getContactDao().getContactByUsername(receiverEmail);
