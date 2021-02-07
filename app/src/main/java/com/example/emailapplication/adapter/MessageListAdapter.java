@@ -1,12 +1,14 @@
 package com.example.emailapplication.adapter;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.example.emailapplication.database.AppDatabase;
 import com.example.emailapplication.entity.Message;
 
 import java.util.ArrayList;
