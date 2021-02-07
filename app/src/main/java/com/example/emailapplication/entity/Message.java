@@ -12,7 +12,7 @@ import java.util.Date;
 @Entity(tableName = "message")
 public class Message {
 
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @NonNull
     public Long id;
      public Long fromId;

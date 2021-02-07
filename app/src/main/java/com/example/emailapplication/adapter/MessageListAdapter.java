@@ -8,9 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.example.emailapplication.database.AppDatabase;
-import com.example.emailapplication.entity.Message;
-
 import java.util.ArrayList;
 
 public class MessageListAdapter extends ArrayAdapter<Message> {

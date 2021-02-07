@@ -10,7 +10,6 @@ import androidx.lifecycle.MutableLiveData;
 
 import com.example.emailapplication.database.AppDatabase;
 import com.example.emailapplication.entity.AccountMessages;
-import com.example.emailapplication.entity.Message;
 
 import java.lang.ref.WeakReference;
 import java.util.List;

@@ -7,8 +7,6 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.emailapplication.entity.Message;
-
 import java.util.List;
 
 public class FoldersViewModel extends AndroidViewModel {

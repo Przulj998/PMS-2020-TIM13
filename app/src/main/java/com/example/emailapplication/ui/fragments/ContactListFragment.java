@@ -17,9 +17,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.emailapplication.R;
 import com.example.emailapplication.entity.Contact;
-import com.example.emailapplication.entity.Message;
 import com.example.emailapplication.viewmodels.ContactListViewModel;
-import com.example.emailapplication.viewmodels.EmailListViewModel;
 
 import java.util.ArrayList;
 import java.util.List;

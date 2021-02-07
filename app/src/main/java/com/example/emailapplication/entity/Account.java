@@ -74,4 +74,11 @@ public class Account {
         {
                 return  this.username!=null && this.password!=null;
         }
+
+    @Entity(primaryKeys = {"tagId","messageId"})
+    public static class TagsMessagesCrossRef {
+        public long tagId;
+        public long messageId;
+
+    }
 }
