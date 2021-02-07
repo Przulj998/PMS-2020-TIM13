@@ -5,7 +5,6 @@ import android.app.Application;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 
-import com.example.emailapplication.database.AppDatabase;
 import com.example.emailapplication.helpEntities.Setting;
 
 public class SettingsViewModel extends AndroidViewModel {

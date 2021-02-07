@@ -16,10 +16,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.emailapplication.R;
-import com.example.emailapplication.database.AppDatabase;
 import com.example.emailapplication.entity.Account;
-
-
 
 import java.lang.ref.WeakReference;
 
@@ -64,7 +61,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_login);
-        appDatabase=AppDatabase.getInstance(LoginActivity.this);
+        appDatabase= AppDatabase.getInstance(LoginActivity.this);
         username = findViewById(R.id.UsernameLogin);
         password = findViewById(R.id.PasswordLogin);
         login = findViewById(R.id.LoginBtnLogin);
@@ -142,7 +139,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         }
     }
-    private void setResult(Account acc,int flag){
+    private void setResult(Account acc, int flag){
         if(acc==null)
         {
             Toast.makeText(getApplicationContext(), R.string.nameNotExist, Toast.LENGTH_LONG).show();

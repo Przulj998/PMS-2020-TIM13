@@ -24,10 +24,17 @@ import androidx.room.RoomDatabase;
 import androidx.room.TypeConverters;
 
 import com.example.emailapplication.database.dao.AccountDao;
+import com.example.emailapplication.database.dao.ContactDao;
 import com.example.emailapplication.database.dao.FolderDao;
+import com.example.emailapplication.database.dao.MessagesDao;
 import com.example.emailapplication.entity.Account;
 import com.example.emailapplication.entity.Attachment;
+import com.example.emailapplication.entity.Contact;
+import com.example.emailapplication.entity.Folder;
+import com.example.emailapplication.entity.Message;
+import com.example.emailapplication.entity.Photo;
 import com.example.emailapplication.entity.Rule;
+import com.example.emailapplication.entity.Tag;
 
 
 @Database(
@@ -53,7 +60,7 @@ import com.example.emailapplication.entity.Rule;
                 Rule.class
 
         },
-        version = 2,
+        version = 4,
         exportSchema = false
 )
 

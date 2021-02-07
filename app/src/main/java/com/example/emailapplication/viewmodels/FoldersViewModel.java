@@ -7,8 +7,6 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.emailapplication.database.AppDatabase;
-import com.example.emailapplication.entity.AccountMessages;
 import com.example.emailapplication.entity.FolderMessages;
 import com.example.emailapplication.entity.Message;
 

@@ -5,6 +5,7 @@ import androidx.room.Insert;
 import androidx.room.Query;
 
 import com.example.emailapplication.entity.Account;
+
 @Dao
 public abstract class AccountDao {
     public AccountDao(){
@@ -12,7 +13,7 @@ public abstract class AccountDao {
     }
     //LOGIN
     @Query("SELECT * FROM account WHERE password= :password AND username= :username")
-    public abstract Account findAccount(String username,String password);
+    public abstract Account findAccount(String username, String password);
 
     @Query("SELECT * FROM account WHERE id= :id")
     public abstract Account findAccountById(String id);

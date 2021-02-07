@@ -1,7 +1,6 @@
 package com.example.emailapplication.activity;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,9 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.example.emailapplication.R;
-import com.example.emailapplication.database.AppDatabase;
 import com.example.emailapplication.entity.Account;
-
 
 import java.lang.ref.WeakReference;
 
@@ -57,7 +54,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        appDatabase=AppDatabase.getInstance(RegisterActivity.this);
+        appDatabase= AppDatabase.getInstance(RegisterActivity.this);
 
         username = findViewById(R.id.registerEmail);
         password = findViewById(R.id.registerPassword);
@@ -102,7 +99,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 break;
     }
 }
-    private void setResult(Account acc,int flag){
+    private void setResult(Account acc, int flag){
         Log.d("account", "account "+flag);
         if(acc==null)
         {

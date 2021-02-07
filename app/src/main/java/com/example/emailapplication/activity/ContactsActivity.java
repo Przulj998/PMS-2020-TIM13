@@ -15,13 +15,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 import com.example.emailapplication.R;
-import com.example.emailapplication.database.AppDatabase;
 import com.example.emailapplication.tools.NavigationRouter;
 import com.google.android.material.navigation.NavigationView;
 
